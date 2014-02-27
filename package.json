@@ -1,10 +1,23 @@
 {
   "name": "monokai-dark",
   "theme": "syntax",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.1.0",
   "description": "A dark monokai theme",
-  "repository": "https://github.com/james2doyle/atom-monokai-dark",
+  "author": {
+    "name": "James Doyle",
+    "email": "james2doyle@gmail.com",
+    "url": "http://ohdoylerules.com"
+  },
+  "homepage": "https://github.com/james2doyle/atom-monokai-dark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/james2doyle/atom-monokai-dark.git"
+  },
+  "private": true,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/james2doyle/atom-monokai-dark/issues"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
