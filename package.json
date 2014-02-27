@@ -1,7 +1,7 @@
 {
   "name": "monokai-dark",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A dark monokai theme",
   "author": {
     "name": "James Doyle",
@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/james2doyle/atom-monokai-dark/issues"
   },
-  "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   }
