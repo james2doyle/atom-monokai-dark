@@ -1,0 +1,12 @@
+{
+  "name": "monokai-dark",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A dark monokai theme",
+  "repository": "https://github.com/james2doyle/atom-monokai-dark",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

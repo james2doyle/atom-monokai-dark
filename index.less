@@ -1,0 +1,147 @@
+@white: #fff;
+@blue: #66D9EF;
+@gutter: #F8F8F2;
+@dark: #0D0D0D;
+@comment: #75715E;
+@string: #E6DB74;
+@const: #AE81FF;
+@keyword: #F92672;
+@storage: @keyword;
+@tag: @keyword;
+@cursor: #F8F8F0;
+@invalid: @cursor;
+@invalid-bg: @keyword;
+@class: #A6E22E;
+@function: @class;
+@attribute: @class;
+@parameter: #FD971F;
+
+.editor {
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: @dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .wrap-guide {
+    background: fade(@white, 1%);
+  }
+
+  .indent-guide {
+    color: fade(@white, 15%);
+  }
+
+  &, .gutter {
+    background-color: @dark;
+    color: @gutter;
+  }
+
+  &.is-focused .cursor {
+    border-color: @cursor;
+  }
+
+  &.is-focused .selection .region {
+    background-color: lighten(@dark, 20%);
+  }
+
+  &.is-focused .line-number.cursor-line-no-selection,
+  &.is-focused .line.cursor-line {
+    background-color: lighten(@dark, 10%);
+  }
+
+  .comment {
+    color: @comment;
+  }
+
+  .string {
+    color: @string;
+  }
+
+  .constant.numeric {
+    color: @const;
+  }
+
+  .constant.language {
+    color: @const;
+  }
+
+  .constant.character,
+  .constant.other {
+    color: @const;
+  }
+
+  .variable {
+  }
+
+  .keyword {
+    color: @keyword;
+  }
+
+  .storage {
+    color: @storage;
+  }
+
+  .storage.type {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .entity.name.class {
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .entity.other.inherited-class {
+    font-style: italic;
+    text-decoration: underline;
+    color: @class;
+  }
+
+  .entity.name.function {
+    color: @function;
+  }
+
+  .variable.parameter {
+    font-style: italic;
+    color: @parameter;
+  }
+
+  .entity.name.tag {
+    color: @tag;
+  }
+
+  .entity.other.attribute-name {
+    color: @attribute;
+  }
+
+  .support.function {
+    color: @blue;
+  }
+
+  .support.constant {
+    color: @blue;
+  }
+
+  .support.type,
+  .support.class {
+    font-style: italic;
+    color: @blue;
+  }
+
+  .invalid {
+    color: @invalid;
+    background-color: @invalid-bg;
+  }
+
+  .invalid.deprecated {
+    color: @invalid;
+    background-color: @const;
+  }
+}
