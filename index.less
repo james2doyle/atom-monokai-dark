@@ -145,3 +145,14 @@
     background-color: @const;
   }
 }
+
+atom-text-editor::shadow {
+    .is-focused .selection .region {
+      background-color: lighten(@dark, 20%);
+    }
+
+    .is-focused .line-number.cursor-line-no-selection,
+    .is-focused .line.cursor-line {
+      background-color: lighten(@dark, 10%);
+    }
+}
