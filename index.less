@@ -16,7 +16,7 @@
 @attribute: @class;
 @parameter: #FD971F;
 
-:host, atom-text-editor {
+atom-text-editor {
   ::-webkit-scrollbar {
     width: 0.5em;
     height: 0.5em;
@@ -56,91 +56,91 @@
     background-color: lighten(@dark, 10%);
   }
 
-  .comment {
+  .syntax--comment {
     color: @comment;
   }
 
-  .string {
+  .syntax--string {
     color: @string;
   }
 
-  .constant.numeric {
+  .syntax--constant.syntax--numeric {
     color: @const;
   }
 
-  .constant.language {
+  .syntax--constant.syntax--language {
     color: @const;
   }
 
-  .constant.character,
-  .constant.other {
+  .syntax--constant.syntax--character,
+  .syntax--constant.syntax--other {
     color: @const;
   }
 
   .variable {
   }
 
-  .keyword {
+  .syntax--keyword {
     color: @keyword;
   }
 
-  .storage {
+  .syntax--storage {
     color: @storage;
   }
 
-  .storage.type {
+  .syntax--storage.syntax--type {
     font-style: italic;
     color: @blue;
   }
 
-  .entity.name.class {
+  .syntax--entity.syntax--name.syntax--class {
     text-decoration: underline;
     color: @class;
   }
 
-  .entity.other.inherited-class {
+  .syntax--entity.syntax--other.syntax--inherited-class {
     font-style: italic;
     text-decoration: underline;
     color: @class;
   }
 
-  .entity.name.function {
+  .syntax--entity.syntax--name.syntax--function {
     color: @function;
   }
 
-  .variable.parameter {
+  .syntax--variable.syntax--parameter {
     font-style: italic;
     color: @parameter;
   }
 
-  .entity.name.tag {
+  .syntax--entity.syntax--name.syntax--tag {
     color: @tag;
   }
 
-  .entity.other.attribute-name {
+  .syntax--entity.syntax--other.syntax--attribute-name {
     color: @attribute;
   }
 
-  .support.function {
+  .syntax--support.syntax--function {
     color: @blue;
   }
 
-  .support.constant {
+  .syntax--support.syntax--constant {
     color: @blue;
   }
 
-  .support.type,
-  .support.class {
+  .syntax--support.syntax--type,
+  .syntax--support.syntax--class {
     font-style: italic;
     color: @blue;
   }
 
-  .invalid {
+  .syntax--invalid {
     color: @invalid;
     background-color: @invalid-bg;
   }
 
-  .invalid.deprecated {
+  .syntax--invalid.syntax--deprecated {
     color: @invalid;
     background-color: @const;
   }
@@ -150,7 +150,7 @@
   }
 }
 
-atom-text-editor::shadow {
+atom-text-editor.editor {
     .is-focused .selection .region {
       background-color: lighten(@dark, 20%);
     }
